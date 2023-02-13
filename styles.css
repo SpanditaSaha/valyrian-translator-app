@@ -43,18 +43,20 @@ footer p{
 
 .container{
     padding:2rem 0px;
-    max-width: 700px;
+    max-width: 600px;
 }
 .container-center{
     margin: auto;
-    max-width: 700px;
+    max-width: 600px;
 }
 
 
 .text-div{
-    height: 17vh;
-    width:700px;
+    height: 15vh;
+    width:600px;
     display: block;
+    padding: 1rem;
+    font-size: 28px;
 }
 
 ::placeholder{
@@ -67,6 +69,8 @@ footer p{
     border: solid 0.1rem var(--primary-color);
     margin: 1rem 0;
     background-color: white;
+    font-size: 28px;
+    padding: 1rem;
 }
 
 #btn-translate{

@@ -2,7 +2,7 @@ var txtInput=document.querySelector("#text-input");
 var btnTranslate=document.querySelector("#btn-translate")
 var outputDiv=document.querySelector("#output")
 
-url="https://api.funtranslations.com/translate/dothraki.json"
+var url="https://api.funtranslations.com/translate/valyrian.json";
 
 function constructUrl(text)
 {
@@ -15,7 +15,7 @@ function errorHandler(error)
 }
 function doFetch()
 {
-    fetch(constructUrl(txtInput.value)).then(response=>response.json).then(json=>{
+    fetch(constructUrl(txtInput.value)).then(response=>response.json()).then(json=>{
         var translatedText=json.contents.translated;
         outputDiv.innerText=translatedText;}).catch(errorHandler)
 }
